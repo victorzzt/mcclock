@@ -3,8 +3,9 @@
 A minecraft clock widget for Android.
 
 ## Acknowledgement
-* Respect to the author of original Minecraft Clock
+* Paying respect to the author of original Minecraft Clock - xlythe
     * It's a rewrite for a more modern version of Android where it won't allow install anymore.
+    * Link to the original app https://f-droid.org/en/packages/com.xlythe.minecraftclock/
 * This app is written with the assistance of Gemini-CLI
 
 ## FDroid Submission Info
