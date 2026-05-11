@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Advanced MC Clock</string>
+    <string name="widget_name_classic">Classic</string>
+    <string name="widget_name_classic_hires">Cl_HiRes</string>
+    <string name="widget_name_moonphase">Cl_Moon</string>
+    <string name="widget_name_classic_15">1.15</string>
+    <string name="widget_name_modern">Modern</string>
+    <string name="widget_name_dynamic">Dynamic</string>
+    <string name="widget_name_modern_hires">dynHiRes</string>
+    <string name="widget_name_modern_moonphase">DynMoon</string>
+</resources>

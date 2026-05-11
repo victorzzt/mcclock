@@ -1,0 +1,46 @@
+# --- Gradle ---
+.gradle/
+build/
+*/build/
+
+# --- Local configuration ---
+local.properties
+
+# --- IntelliJ / Android Studio ---
+.idea/
+*.iml
+
+# (Optional: keep shared workspace files if collaborating)
+# .idea/codeStyles/
+# .idea/inspectionProfiles/
+
+# --- Native / CMake ---
+.externalNativeBuild/
+.cxx/
+
+# --- Generated files ---
+captures/
+
+# --- OS files ---
+.DS_Store
+Thumbs.db
+
+# --- Logs ---
+*.log
+
+# --- Signing / secrets (important if you generate keystores) ---
+*.jks
+*.keystore
+keystore.properties
+
+# --- Android Studio temp / cache ---
+.idea/caches/
+.idea/libraries/
+.idea/workspace.xml
+.idea/modules.xml
+.idea/navEditor.xml
+.idea/assetWizardSettings.xml
+
+# --- Misc ---
+GEMINI.md
+``

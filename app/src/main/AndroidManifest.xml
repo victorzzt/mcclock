@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher_clock"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_clock"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AdvancedMCClock">
+        <receiver android:name=".AnalogClockWidgetClassic"
+            android:label="@string/widget_name_classic"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/analog_clock_widget_info" />
+        </receiver>
+
+        <receiver android:name=".AnalogClockWidgetClassic_HiRes"
+            android:label="@string/widget_name_classic_hires"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/analog_clock_widget_info_hires" />
+        </receiver>
+
+        <receiver android:name=".AnalogClockWidgetClassic_MoonPhase"
+            android:label="@string/widget_name_moonphase"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/analog_clock_widget_info_moonphase" />
+        </receiver>
+
+        <receiver android:name=".AnalogClockWidgetClassic_15"
+            android:label="@string/widget_name_classic_15"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/analog_clock_widget_info_15" />
+        </receiver>
+
+        <receiver android:name=".AnalogClockWidgetModern"
+            android:label="@string/widget_name_modern"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/analog_clock_widget_info_modern" />
+        </receiver>
+
+        <receiver android:name=".AnalogClockWidgetModern_Rendered"
+            android:label="@string/widget_name_dynamic"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/analog_clock_widget_info_modern_rendered" />
+        </receiver>
+
+        <receiver android:name=".AnalogClockWidgetModern_HiRes"
+            android:label="@string/widget_name_modern_hires"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/analog_clock_widget_info_modern_hires" />
+        </receiver>
+
+        <receiver android:name=".AnalogClockWidgetModern_MoonPhase"
+            android:label="@string/widget_name_modern_moonphase"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/analog_clock_widget_info_modern_moonphase" />
+        </receiver>
+    </application>
+</manifest>
