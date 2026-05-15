@@ -5,9 +5,6 @@ import kotlin.math.cos
 import kotlin.math.roundToInt
 import kotlin.math.sin
 
-import java.time.LocalDate
-import java.time.temporal.ChronoUnit
-
 /**
  * Utility class for clock widget operations.
  */
