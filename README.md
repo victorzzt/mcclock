@@ -17,7 +17,7 @@ This project is prepared for FDroid submission.
 
 ## License
 
-This project is licensed under the MIT-0 License. See the [LICENSE](LICENSE) file for details. This license allows for modification and redistribution without the requirement for attribution.
+* This project is licensed under the MIT-0 License. See the [LICENSE](LICENSE) file for details. This license allows for modification and redistribution without the requirement for attribution.
 
 ### Kotlin License Statement
 
@@ -26,4 +26,5 @@ There is no "license contamination" (viral effect) associated with using Kotlin 
 
 ## Texture Used
 
-Clock artwork elements may be derived from Microsoft design assets and are subject to the Microsoft End User License Agreement (EULA). Their inclusion is intended to fall under applicable fair use provisions.
+This project is an unofficial Android widget inspired by the Minecraft clock. It is not an official Minecraft product and is not approved by or associated with Mojang AB or Microsoft.
+Minecraft names, brands, textures, graphics, and other assets are the property of their respective owners. To the extent this project includes artwork derived from or referencing Minecraft assets, that artwork is used only in a limited, descriptive, and non-substitutive manner. No ownership of such assets is claimed, no official endorsement is implied, and no rights are granted beyond those available under applicable law, official usage guidelines, or separate permission from the rights holder.
