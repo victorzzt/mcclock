@@ -1,0 +1,9 @@
+MC Clock Widget is an unofficial Android home screen widget inspired by the Minecraft in-game clock.
+
+It provides eight widget variants, including classic pixel-art styles, newer gold-ingot-style designs, high-resolution retouches by the developer of this app, and moon-phase variants at night-time.
+
+Add the widget from your launcher's widget picker and choose the style you prefer.
+
+The app works fully offline. It does not show ads, does not include telemetry, and does not request special permissions.
+
+This is a fan project. It is not an official Minecraft product and is not affiliated with, endorsed by, sponsored by, or approved by Mojang AB or Microsoft.

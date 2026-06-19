@@ -1,0 +1,5 @@
+Initial v0.9 release.
+
+- Eight offline home screen clock widget variants
+- Classic, newer gold-style, high-resolution, and moon-phase styles
+- No ads, telemetry, network access, or special permissions
