@@ -1,9 +1,4 @@
 package com.victorzzt.mcclock
 
-class AnalogClockWidgetModern_MoonPhase : BaseClockWidgetProvider(
-    layoutResId = R.layout.widget_analog_clock_modern_moonphase,
-    renderer = MoonPhaseClockRenderer(
-        maskResId = R.drawable.clock_mask_modern,
-        dialResources = MoonPhaseDialResources.modern
-    )
-)
+/** 将清单中的现代月相时钟组件绑定到 [WidgetVariant.MODERN_MOON_PHASE]。 */
+class AnalogClockWidgetModern_MoonPhase : BaseClockWidgetProvider(WidgetVariant.MODERN_MOON_PHASE)

@@ -44,4 +44,10 @@ keystore.properties
 # --- Misc ---
 GEMINI.md
 F-DROID_SUBMISSION_WINDOWS.md
-``
+F-DROID_SUBMISSION_UBUNTU.md
+
+# --- Local AI agent instructions and workspaces ---
+AGENTS.md
+.agent/
+.agents/
+.codex/

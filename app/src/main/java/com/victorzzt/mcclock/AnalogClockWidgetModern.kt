@@ -1,8 +1,4 @@
 package com.victorzzt.mcclock
 
-class AnalogClockWidgetModern : BaseClockWidgetProvider(
-    layoutResId = R.layout.widget_analog_clock_modern,
-    renderer = SpriteSheetClockRenderer(
-        spriteSheetResId = R.drawable.clock_17
-    )
-)
+/** 将清单中的现代精灵表时钟组件绑定到 [WidgetVariant.MODERN]。 */
+class AnalogClockWidgetModern : BaseClockWidgetProvider(WidgetVariant.MODERN)

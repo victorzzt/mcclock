@@ -1,8 +1,4 @@
 package com.victorzzt.mcclock
 
-class AnalogClockWidgetClassic_15 : BaseClockWidgetProvider(
-    layoutResId = R.layout.widget_analog_clock_classic_15,
-    renderer = SpriteSheetClockRenderer(
-        spriteSheetResId = R.drawable.clock_15
-    )
-)
+/** 将清单中的经典 1.15 精灵表时钟组件绑定到 [WidgetVariant.CLASSIC_15]。 */
+class AnalogClockWidgetClassic_15 : BaseClockWidgetProvider(WidgetVariant.CLASSIC_15)

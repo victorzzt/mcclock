@@ -1,9 +1,4 @@
 package com.victorzzt.mcclock
 
-class AnalogClockWidgetModern_Rendered : BaseClockWidgetProvider(
-    layoutResId = R.layout.widget_analog_clock_modern_rendered,
-    renderer = ProceduralClockRenderer(
-        maskResId = R.drawable.clock_mask_modern,
-        dialResId = R.drawable.clock_dial_modern
-    )
-)
+/** 将清单中的现代程序化时钟组件绑定到 [WidgetVariant.MODERN_RENDERED]。 */
+class AnalogClockWidgetModern_Rendered : BaseClockWidgetProvider(WidgetVariant.MODERN_RENDERED)

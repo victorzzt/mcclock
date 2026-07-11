@@ -1,18 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!-- Shared transparent widget surface; outer padding keeps clock artwork clear of launcher edges. -->
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/clock_widget_root"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="16dp"
-    android:background="@android:color/transparent">
+    android:background="@android:color/transparent"
+    android:padding="@dimen/widget_content_padding">
 
-    <!-- Clock Face -->
+    <!-- Runtime-rendered clock image module shared by every visual variant. -->
     <ImageView
         android:id="@+id/clock_image"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_gravity="center"
         android:scaleType="fitCenter"
-        android:src="@drawable/clock_face_placeholder"/>
+        android:src="@drawable/clock_face_placeholder" />
 
 </FrameLayout>

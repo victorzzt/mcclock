@@ -1,18 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/clock_widget_root"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="16dp"
     android:background="@android:color/transparent">
 
-    <!-- Clock Face -->
+    <!-- Modern-family picker preview; the bitmap already includes its intended visual spacing. -->
     <ImageView
-        android:id="@+id/clock_image"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_gravity="center"
         android:scaleType="fitCenter"
-        android:src="@drawable/clock_face_placeholder"/>
+        android:src="@drawable/widget_preview_modern" />
 
 </FrameLayout>

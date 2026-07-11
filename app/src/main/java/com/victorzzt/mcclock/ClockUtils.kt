@@ -5,21 +5,23 @@ import kotlin.math.cos
 import kotlin.math.roundToInt
 import kotlin.math.sin
 
-/**
- * Utility class for clock widget operations.
- */
+/** 不依赖 Widget 生命周期的底层位图合成与缩放操作。 */
 object ClockUtils {
 
     /**
-     * Renders the clock sprite by applying a dial texture onto a mask based on the provided angle.
-     * Uses batch pixel operations to minimize JNI overhead and supports reusable bitmaps.
-     * Adapted from: https://minecraft.wiki/w/Procedural_animated_texture_generation/Clocks
+     * 按 [dialAngle] 旋转表盘纹理，并将其填入 [item] 遮罩中以合成时钟帧。
      *
-     * @param item The mask bitmap.
-     * @param dial The dial texture bitmap.
-     * @param dialAngle The angle of the dial in radians.
-     * @param outBitmap An optional mutable bitmap to reuse for output. Must match item dimensions.
-     * @return The rendered clock sprite bitmap.
+     * 遮罩里的非零洋红色灰阶像素是可替换区域：其红色通道既充当亮度，也用于调制表盘
+     * 颜色；其他像素原样复制。像素批量读写可减少 JNI 往返，[outBitmap] 则允许调用方在
+     * 尺寸和可变性满足条件时复用输出内存。
+     *
+     * 算法参考：https://minecraft.wiki/w/Procedural_animated_texture_generation/Clocks
+     *
+     * @param item 包含固定外观和可替换区域的遮罩位图。
+     * @param dial 可平铺采样的表盘纹理。
+     * @param dialAngle 表盘旋转角度，单位为弧度。
+     * @param outBitmap 可选的可变输出位图；尺寸不匹配时会忽略并新建位图。
+     * @return 合成后的时钟帧。
      */
     fun setupClockSprite(
         item: Bitmap,
@@ -82,12 +84,9 @@ object ClockUtils {
     }
 
     /**
-     * Creates a scaled version of the bitmap while maintaining the aspect ratio.
+     * 在不裁剪、不拉伸的前提下，把位图等比缩放到 [maxW] × [maxH] 边界内。
      *
-     * @param src The source bitmap.
-     * @param maxW The maximum width allowed.
-     * @param maxH The maximum height allowed.
-     * @return A scaled Bitmap.
+     * 使用最近邻缩放以保留像素画边缘；调用方应传入正的目标尺寸。
      */
     fun scaleKeepAspect(src: Bitmap, maxW: Int, maxH: Int): Bitmap {
         val ratio = minOf(
@@ -101,5 +100,10 @@ object ClockUtils {
         return Bitmap.createScaledBitmap(src, newW, newH, false)
     }
 
+    /**
+     * 返回旧版调用方使用的月相资源后缀名称。
+     *
+     * 新代码应优先直接使用 [MoonPhase]；此方法仅维持历史接口兼容性。
+     */
     fun calculateLunarPhase(): String = MoonPhase.current().legacyName
 }

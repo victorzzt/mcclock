@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Launcher sizing, refresh fallback, and picker preview metadata for the modern rendered variant. -->
+<appwidget-provider xmlns:android="http://schemas.android.com/apk/res/android"
+    android:minWidth="@dimen/widget_default_size_2x2"
+    android:minHeight="@dimen/widget_default_size_2x2"
+    android:minResizeWidth="@dimen/widget_default_size_2x2"
+    android:minResizeHeight="@dimen/widget_default_size_2x2"
+    android:targetCellWidth="@integer/widget_default_cell_span"
+    android:targetCellHeight="@integer/widget_default_cell_span"
+    android:updatePeriodMillis="@integer/widget_update_period_fallback_ms"
+    android:initialLayout="@layout/widget_clock"
+    android:previewImage="@drawable/widget_preview_modern"
+    android:previewLayout="@layout/widget_preview_modern"
+    android:resizeMode="horizontal|vertical"
+    android:widgetCategory="home_screen" />

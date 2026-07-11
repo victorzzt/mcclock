@@ -1,10 +1,4 @@
 package com.victorzzt.mcclock
 
-class AnalogClockWidgetClassic_HiRes : BaseClockWidgetProvider(
-    layoutResId = R.layout.widget_analog_clock_classic_hires,
-    renderer = ProceduralClockRenderer(
-        maskResId = R.drawable.clock_mask_classic,
-        dialResId = R.drawable.clock_dial_classic,
-        upscaleSizePx = HIGH_RES_SIZE_PX
-    )
-)
+/** 将清单中的经典高清程序化时钟组件绑定到 [WidgetVariant.CLASSIC_HI_RES]。 */
+class AnalogClockWidgetClassic_HiRes : BaseClockWidgetProvider(WidgetVariant.CLASSIC_HI_RES)

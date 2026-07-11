@@ -19,7 +19,7 @@
             </intent-filter>
             <meta-data
                 android:name="android.appwidget.provider"
-                android:resource="@xml/analog_clock_widget_info" />
+                android:resource="@xml/widget_info_classic" />
         </receiver>
 
         <receiver android:name=".AnalogClockWidgetClassic_HiRes"
@@ -30,7 +30,7 @@
             </intent-filter>
             <meta-data
                 android:name="android.appwidget.provider"
-                android:resource="@xml/analog_clock_widget_info_hires" />
+                android:resource="@xml/widget_info_classic_hi_res" />
         </receiver>
 
         <receiver android:name=".AnalogClockWidgetClassic_MoonPhase"
@@ -41,7 +41,7 @@
             </intent-filter>
             <meta-data
                 android:name="android.appwidget.provider"
-                android:resource="@xml/analog_clock_widget_info_moonphase" />
+                android:resource="@xml/widget_info_classic_moon_phase" />
         </receiver>
 
         <receiver android:name=".AnalogClockWidgetClassic_15"
@@ -52,7 +52,7 @@
             </intent-filter>
             <meta-data
                 android:name="android.appwidget.provider"
-                android:resource="@xml/analog_clock_widget_info_15" />
+                android:resource="@xml/widget_info_classic_15" />
         </receiver>
 
         <receiver android:name=".AnalogClockWidgetModern"
@@ -63,7 +63,7 @@
             </intent-filter>
             <meta-data
                 android:name="android.appwidget.provider"
-                android:resource="@xml/analog_clock_widget_info_modern" />
+                android:resource="@xml/widget_info_modern" />
         </receiver>
 
         <receiver android:name=".AnalogClockWidgetModern_Rendered"
@@ -74,7 +74,7 @@
             </intent-filter>
             <meta-data
                 android:name="android.appwidget.provider"
-                android:resource="@xml/analog_clock_widget_info_modern_rendered" />
+                android:resource="@xml/widget_info_modern_rendered" />
         </receiver>
 
         <receiver android:name=".AnalogClockWidgetModern_HiRes"
@@ -85,7 +85,7 @@
             </intent-filter>
             <meta-data
                 android:name="android.appwidget.provider"
-                android:resource="@xml/analog_clock_widget_info_modern_hires" />
+                android:resource="@xml/widget_info_modern_hi_res" />
         </receiver>
 
         <receiver android:name=".AnalogClockWidgetModern_MoonPhase"
@@ -96,7 +96,7 @@
             </intent-filter>
             <meta-data
                 android:name="android.appwidget.provider"
-                android:resource="@xml/analog_clock_widget_info_modern_moonphase" />
+                android:resource="@xml/widget_info_modern_moon_phase" />
         </receiver>
     </application>
 </manifest>
