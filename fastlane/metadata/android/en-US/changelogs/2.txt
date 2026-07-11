@@ -1,1 +1,1 @@
-0.9 to 1.0: Added necessary metadata for F-Droid submission
+0.9 to 1.0: Added necessary metadata for F-Droid submission, streamlined the rendering logic to not repeatedly load resources
