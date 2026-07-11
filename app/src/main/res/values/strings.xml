@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Advanced MC Clock</string>
+    <string name="app_name">MC Clock Widget</string>
     <string name="widget_name_classic">Classic</string>
     <string name="widget_name_classic_hires">Cl_HiRes</string>
     <string name="widget_name_moonphase">Cl_Moon</string>

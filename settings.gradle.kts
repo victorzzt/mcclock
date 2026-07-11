@@ -19,5 +19,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "Advanced MC Clock"
+rootProject.name = "MC Clock Widget"
 include(":app")

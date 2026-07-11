@@ -101,36 +101,5 @@ object ClockUtils {
         return Bitmap.createScaledBitmap(src, newW, newH, false)
     }
 
-    /**
-     * Calculates the current lunar phase as a descriptive string.
-     * Uses a linear approximation based on the average synodic month (29.53059 days)
-     * and a reference New Moon epoch (January 6, 2000, 18:14 UTC).
-     *
-     * @return A string representing the current lunar phase (e.g., "Full Moon").
-     */
-    fun calculateLunarPhase(): String {
-        // Reference New Moon: Jan 6, 2000, 18:14 UTC
-        val epochMillis = 947182440000L
-        val nowMillis = System.currentTimeMillis()
-        
-        // Mean synodic month in milliseconds
-        val synodicMonthMillis = 29.53058867 * 24 * 60 * 60 * 1000
-        
-        val diffMillis = nowMillis - epochMillis
-        var phase = (diffMillis % synodicMonthMillis) / synodicMonthMillis
-        
-        // Handle negative phase for dates before epoch
-        if (phase < 0) phase += 1.0
-
-        return when {
-            phase < 0.0625 || phase > 0.9375 -> "New_Moon"
-            phase < 0.1875 -> "Waxing_Crescent"
-            phase < 0.3125 -> "First_Quarter"
-            phase < 0.4375 -> "Waxing_Gibbous"
-            phase < 0.5625 -> "Full_Moon"
-            phase < 0.6875 -> "Waning_Gibbous"
-            phase < 0.8125 -> "Last_Quarter"
-            else -> "Waning_Crescent"
-        }
-    }
+    fun calculateLunarPhase(): String = MoonPhase.current().legacyName
 }
