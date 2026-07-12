@@ -6,9 +6,9 @@ Minecraft names, brands, textures, graphics, and other game assets are the prope
 
 The source code of this project is licensed under MIT-0. Minecraft-related artwork or visually derived assets, if any, are not included in that MIT-0 grant unless a separate compatible license is explicitly documented for those files.
 
-## Files To Review
+## Bundled Artwork Scope
 
-The following assets should be reviewed manually before F-Droid submission:
+The bundled artwork includes clock sprites, masks, dials, launcher images, and widget preview images in these resource families:
 
 - `app/src/main/res/drawable/clock_15.png`
 - `app/src/main/res/drawable/clock_17.png`
@@ -21,9 +21,6 @@ The following assets should be reviewed manually before F-Droid submission:
 - `app/src/main/res/mipmap-*/ic_launcher*.webp`
 - `app/src/main/res/mipmap-xxhdpi/ic_launcher_clock.png`
 
-## TODO Before Submission
+## F-Droid Metadata
 
-- Decide whether to keep the Minecraft-inspired artwork and disclose it in fdroiddata metadata.
-- Decide whether F-Droid `NonFreeAssets` anti-feature metadata is needed.
-- Replace placeholder Fastlane images with manually prepared screenshots and icon artwork.
-- If assets are independently recreated, document their author, date, and license here.
+When F-Droid metadata discloses this artwork with `NonFreeAssets`, this notice supplies the rationale: the app includes artwork that visually references Minecraft assets while remaining an unofficial fan project.

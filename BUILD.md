@@ -1,6 +1,6 @@
-# Build Notes
+# Build Instructions
 
-This document is a build note for maintainers and F-Droid reviewers.
+This document describes the command-line build environment for MC Clock Widget.
 
 ## Environment
 
@@ -32,15 +32,9 @@ For a debug build:
 ./gradlew clean assembleDebug
 ```
 
-## Notes For Review
+## Release Notes
 
 - This project is an Android home screen widget and does not require special runtime permissions.
 - The app is intended to run fully offline.
 - Generated release artifacts are not committed to the repository.
 - Text files in this repository should keep LF line endings.
-
-## TODO Before Submission
-
-- Confirm the exact Android SDK packages used by the F-Droid build environment.
-- Confirm the release tag or commit used for version `1.0` / version code `2`.
-- Confirm whether any artwork requires F-Droid anti-feature metadata.

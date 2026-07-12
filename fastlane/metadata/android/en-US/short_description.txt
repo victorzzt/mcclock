@@ -1,1 +1,1 @@
-Unofficial Minecraft inspired clock widget for Android
+Unofficial Minecraft-inspired clock widget
