@@ -13,15 +13,6 @@ IssueTracker: https://github.com/victorzzt/mcclock/issues
 Changelog: https://github.com/victorzzt/mcclock/releases
 
 AutoName: MC Clock Widget
-Summary: Unofficial Minecraft-inspired clock widget for Android
-Description: |-
-    MC Clock Widget is an unofficial Android home screen widget inspired by the Minecraft in-game clock.
-
-    It provides eight widget variants, including classic pixel-art styles, newer gold-ingot-style designs, high-resolution retouches, and moon-phase variants for night-time display.
-
-    The app works fully offline. It does not show ads, does not include telemetry, and does not request special permissions.
-
-    This is a fan project. It is not an official Minecraft product and is not affiliated with, endorsed by, sponsored by, or approved by Mojang AB or Microsoft.
 
 RepoType: git
 Repo: https://github.com/victorzzt/mcclock.git
@@ -29,7 +20,7 @@ Repo: https://github.com/victorzzt/mcclock.git
 Builds:
   - versionName: '1.0'
     versionCode: 2
-    commit: TODO-v1.0-tag-or-release-commit
+    commit: v1.0
     subdir: .
     gradle:
       - yes
