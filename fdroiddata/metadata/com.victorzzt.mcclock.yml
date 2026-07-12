@@ -5,7 +5,7 @@
 # current F-Droid metadata syntax and replacing TODO values.
 
 Categories:
-  - Time
+  - Clock
 License: MIT-0
 AuthorName: Zitao Zhang
 SourceCode: https://github.com/victorzzt/mcclock
