@@ -51,3 +51,6 @@ AGENTS.md
 .agent/
 .agents/
 .codex/
+
+release
+release/*
